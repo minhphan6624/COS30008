@@ -1,2 +1,2 @@
-# COS30038
-Github repo for COS30038 - Data Structures and Patterns - Swinburne University 
+# COS30008
+Github repo for COS30008 - Data Structures and Patterns - Swinburne University 
