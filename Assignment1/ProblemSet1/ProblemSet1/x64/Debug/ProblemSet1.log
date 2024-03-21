@@ -1,3 +1,2 @@
-﻿  Vector3D_PS1.cpp
-D:\COS30008\Assignment1\ProblemSet1\Vector3D_PS1.cpp(8,33): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+﻿  Matrix3x3_PS1.cpp
   ProblemSet1.vcxproj -> D:\COS30008\Assignment1\ProblemSet1\x64\Debug\ProblemSet1.exe

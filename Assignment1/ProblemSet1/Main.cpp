@@ -8,8 +8,8 @@
 
 using namespace std;
 
-#define P1
-//#define P2
+//#define P1
+#define P2
 //#define P3
 
 size_t gCount = 0;
