@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\COS30008\\Lab03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Vector3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Vector3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Matrix3x3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Matrix3x3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|D:\\COS30008\\Lab03\\Vector3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{23A3FC66-C3A5-4C02-BF81-D651BB738727}|Lab03.vcxproj|solutionrelative:Vector3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,51 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Vector2D.h",
+              "DocumentMoniker": "D:\\COS30008\\Lab03\\Vector2D.h",
+              "RelativeDocumentMoniker": "Vector2D.h",
+              "ToolTip": "D:\\COS30008\\Lab03\\Vector2D.h",
+              "RelativeToolTip": "Vector2D.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAWwCMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T23:51:41.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vector2D.cpp",
+              "DocumentMoniker": "D:\\COS30008\\Lab03\\Vector2D.cpp",
+              "RelativeDocumentMoniker": "Vector2D.cpp",
+              "ToolTip": "D:\\COS30008\\Lab03\\Vector2D.cpp",
+              "RelativeToolTip": "Vector2D.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAAAWwEoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T23:51:33.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Vector3D.cpp",
               "DocumentMoniker": "D:\\COS30008\\Lab03\\Vector3D.cpp",
               "RelativeDocumentMoniker": "Vector3D.cpp",
               "ToolTip": "D:\\COS30008\\Lab03\\Vector3D.cpp",
               "RelativeToolTip": "Vector3D.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-21T13:08:37.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Vector3D.h",
               "DocumentMoniker": "D:\\COS30008\\Lab03\\Vector3D.h",
               "RelativeDocumentMoniker": "Vector3D.h",
               "ToolTip": "D:\\COS30008\\Lab03\\Vector3D.h",
               "RelativeToolTip": "Vector3D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-21T13:08:29.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Matrix3x3.cpp",
               "DocumentMoniker": "D:\\COS30008\\Lab03\\Matrix3x3.cpp",
               "RelativeDocumentMoniker": "Matrix3x3.cpp",
               "ToolTip": "D:\\COS30008\\Lab03\\Matrix3x3.cpp",
               "RelativeToolTip": "Matrix3x3.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-21T02:20:02.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Main.cpp",
               "DocumentMoniker": "D:\\COS30008\\Lab03\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "D:\\COS30008\\Lab03\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-21T13:06:56.089Z",
               "EditorCaption": ""

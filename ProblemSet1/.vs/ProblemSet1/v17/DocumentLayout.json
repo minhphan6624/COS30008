@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\COS30008\\ProblemSet1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|D:\\COS30008\\ProblemSet1\\Polygon_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|solutionrelative:Polygon_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|D:\\COS30008\\ProblemSet1\\Vector3D_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|solutionrelative:Vector3D_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|D:\\COS30008\\ProblemSet1\\Matrix3x3_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|solutionrelative:Matrix3x3_PS1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|D:\\COS30008\\ProblemSet1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFE1F753-B6F6-4235-B483-79227BE11989}|ProblemSet1.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vector3D_PS1.cpp",
+              "DocumentMoniker": "D:\\COS30008\\ProblemSet1\\Vector3D_PS1.cpp",
+              "RelativeDocumentMoniker": "Vector3D_PS1.cpp",
+              "ToolTip": "D:\\COS30008\\ProblemSet1\\Vector3D_PS1.cpp",
+              "RelativeToolTip": "Vector3D_PS1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-23T05:00:59.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Polygon_PS1.cpp",
+              "DocumentMoniker": "D:\\COS30008\\ProblemSet1\\Polygon_PS1.cpp",
+              "RelativeDocumentMoniker": "Polygon_PS1.cpp",
+              "ToolTip": "D:\\COS30008\\ProblemSet1\\Polygon_PS1.cpp",
+              "RelativeToolTip": "Polygon_PS1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-23T04:40:23.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Matrix3x3_PS1.cpp",
+              "DocumentMoniker": "D:\\COS30008\\ProblemSet1\\Matrix3x3_PS1.cpp",
+              "RelativeDocumentMoniker": "Matrix3x3_PS1.cpp",
+              "ToolTip": "D:\\COS30008\\ProblemSet1\\Matrix3x3_PS1.cpp",
+              "RelativeToolTip": "Matrix3x3_PS1.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-23T04:40:20.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\COS30008\\ProblemSet1\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "D:\\COS30008\\ProblemSet1\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-23T04:31:03.695Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
