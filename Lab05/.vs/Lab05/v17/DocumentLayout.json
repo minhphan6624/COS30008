@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\quang\\src\\COS30008\\Lab05\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A25C736A-74D1-49CE-82DE-24A66DB079C0}|Lab05.vcxproj|C:\\Users\\quang\\src\\COS30008\\Lab05\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A25C736A-74D1-49CE-82DE-24A66DB079C0}|Lab05.vcxproj|solutionrelative:Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25C736A-74D1-49CE-82DE-24A66DB079C0}|Lab05.vcxproj|C:\\Users\\quang\\src\\COS30008\\Lab05\\DataWrapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A25C736A-74D1-49CE-82DE-24A66DB079C0}|Lab05.vcxproj|solutionrelative:DataWrapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\quang\\src\\COS30008\\Lab05\\Map.h",
+              "RelativeDocumentMoniker": "Map.h",
+              "ToolTip": "C:\\Users\\quang\\src\\COS30008\\Lab05\\Map.h",
+              "RelativeToolTip": "Map.h",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T16:51:05.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataWrapper.cpp",
+              "DocumentMoniker": "C:\\Users\\quang\\src\\COS30008\\Lab05\\DataWrapper.cpp",
+              "RelativeDocumentMoniker": "DataWrapper.cpp",
+              "ToolTip": "C:\\Users\\quang\\src\\COS30008\\Lab05\\DataWrapper.cpp",
+              "RelativeToolTip": "DataWrapper.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T16:51:01.606Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
