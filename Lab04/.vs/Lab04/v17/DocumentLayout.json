@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\quang\\src\\COS30008\\Lab04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|solutionrelative:ComponentBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|solutionrelative:ComponentBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\quang\\OneDrive - Swinburne University\\000SwinUni\\2024-Sem1\\COS30008-Data-Structures-and-Patterns\\2024\\Labs\\Lab04\\Artifacts\\Resistor\\Solution\\ComponentBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBaseAuxiliaries.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC91C0E3-F222-47CA-817C-F5BACB523AEF}|Lab04.vcxproj|solutionrelative:ComponentBaseAuxiliaries.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComponentBase.cpp",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive - Swinburne University\\000SwinUni\\2024-Sem1\\COS30008-Data-Structures-and-Patterns\\2024\\Labs\\Lab04\\Artifacts\\Resistor\\Solution\\ComponentBase.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - Swinburne University\\000SwinUni\\2024-Sem1\\COS30008-Data-Structures-and-Patterns\\2024\\Labs\\Lab04\\Artifacts\\Resistor\\Solution\\ComponentBase.cpp",
+              "ToolTip": "C:\\Users\\quang\\OneDrive - Swinburne University\\000SwinUni\\2024-Sem1\\COS30008-Data-Structures-and-Patterns\\2024\\Labs\\Lab04\\Artifacts\\Resistor\\Solution\\ComponentBase.cpp",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - Swinburne University\\000SwinUni\\2024-Sem1\\COS30008-Data-Structures-and-Patterns\\2024\\Labs\\Lab04\\Artifacts\\Resistor\\Solution\\ComponentBase.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T14:36:39.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComponentBase.cpp",
+              "DocumentMoniker": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.cpp",
+              "RelativeDocumentMoniker": "ComponentBase.cpp",
+              "ToolTip": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.cpp",
+              "RelativeToolTip": "ComponentBase.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T14:30:55.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComponentBase.h",
+              "DocumentMoniker": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.h",
+              "RelativeDocumentMoniker": "ComponentBase.h",
+              "ToolTip": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBase.h",
+              "RelativeToolTip": "ComponentBase.h",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T14:28:29.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComponentBaseAuxiliaries.cpp",
+              "DocumentMoniker": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBaseAuxiliaries.cpp",
+              "RelativeDocumentMoniker": "ComponentBaseAuxiliaries.cpp",
+              "ToolTip": "C:\\Users\\quang\\src\\COS30008\\Lab04\\ComponentBaseAuxiliaries.cpp",
+              "RelativeToolTip": "ComponentBaseAuxiliaries.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T14:26:53.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
