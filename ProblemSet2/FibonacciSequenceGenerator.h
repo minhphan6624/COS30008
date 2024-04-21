@@ -25,10 +25,7 @@ public:
     const long long& operator*() const noexcept;
 
     // Type conversion to bool
-    operator bool() const noexcept 
-    {
-        return hasNext();
-    }
+    operator bool() const noexcept;
     
     // Reset sequence generator to first Fibonacci number
     void reset() noexcept;

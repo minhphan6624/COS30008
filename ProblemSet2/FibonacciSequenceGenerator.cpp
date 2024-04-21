@@ -21,6 +21,12 @@ const long long& FibonacciSequenceGenerator::operator*() const noexcept
 	return fCurrent;
 }
 
+// Type conversion to bool
+FibonacciSequenceGenerator::operator bool() const noexcept
+{
+	return this->hasNext();
+}
+
 // Reset sequence generator to first Fibonacci number
 void FibonacciSequenceGenerator::reset() noexcept 
 {
