@@ -3,7 +3,7 @@
 #include <cassert>
 #include <iostream>
 
-
+//Reset the buffer
 void ifstream12::reset()
 {
 	for (size_t i = 0; i < fBufferSize; i++)
@@ -11,32 +11,35 @@ void ifstream12::reset()
 
 	fByteIndex = 0;
 	fBitIndex = 7;
-
 	fByteCount = 0;
 }
 
+//Fetch data from input stream
 void ifstream12::fetch_data()
 {	
 	reset();
 
-	//fetch data from underlying stream
+	//read data from underlying stream
 	fIStream.read((char*)fBuffer, fBufferSize);
 
 	//get the number of bytes read in the last input operation
 	fByteCount = fIStream.gcount();
 }
 
-//Read in a bit 
+//Read a bit 
 std::optional<size_t> ifstream12::readBit()
 {
-	if (eof())
-		return std::nullopt;
-
+	//If no byte is read, fetch data from input stream
 	if (fByteCount == 0)
 		fetch_data();
 
+	//Return nothing if end of file is reached
+	if (eof())
+		return NULL;
+
+	//Read the next bit
 	std::byte lNextBit = fBuffer[fByteIndex] & (std::byte{1} << fBitIndex);
-	size_t result = (std::to_integer<size_t>(lNextBit) >> fBitIndex) & 1;
+	size_t lResult = (std::to_integer<size_t>(lNextBit) >> fBitIndex);
 
 	//advance to next position
 	fBitIndex--;
@@ -44,17 +47,17 @@ std::optional<size_t> ifstream12::readBit()
 	if (fBitIndex < 0)
 	{
 		fByteCount--;
-
 		fByteIndex++;
 		fBitIndex = 7;
 
-		if (fByteIndex == fBufferSize)
+		//If the buffer is full, reset the buffer and fetch data
+		if (fByteIndex >= fBufferSize)
 		{
-			reset();
+			fetch_data();
 		}
 	}
 
-	return result;
+	return lResult;
 }
 
 //Constructor
@@ -109,8 +112,7 @@ bool ifstream12::good() const
 //Check for end of file
 bool ifstream12::eof() const
 {
-	//return (fByteCount == 0 && fIStream.eof());
-	return fByteIndex >= fByteCount && fIStream.eof();
+	return (fByteCount==0 && fIStream.eof());
 }
 
 //Input operator
@@ -120,15 +122,17 @@ ifstream12& ifstream12::operator>>(size_t& aValue)
 
 	for (int i = 0; i < 12; i++)	// read 12 Bits
 	{
-		std::optional<size_t> nextBit = readBit();
+		std::optional<size_t> lNextBit = readBit();
 
-		if (!nextBit) {             
+		//break the loop if no bit is read
+		if (!lNextBit)           
 			break;
-		}
-
-		if (*nextBit == 1) {        
-			aValue |= (static_cast<size_t>(1) << (11 - i));  
+		//Set bit at index i
+		else if (lNextBit == 1) 
+		{        
+			aValue |= (static_cast<size_t>(1) << i);
         }
 	}
+	
 	return *this;
 }
