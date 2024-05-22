@@ -6,7 +6,7 @@
 
 #include "List.h"
 
-//#define P1
+#define P1
 //#define P2
 //#define P3
 

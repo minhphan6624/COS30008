@@ -1,0 +1,72 @@
+﻿  Main.cpp
+C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22): error C2440: '<function-style-cast>': cannot convert from 'const std::shared_ptr<DoublyLinkedList<T>>' to 'DoublyLinkedListIterator<T>'
+C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22): error C2440:         with
+C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22): error C2440:         [
+C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22): error C2440:             T=std::string
+C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22): error C2440:         ]
+  (compiling source file 'Main.cpp')
+  C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22):
+  'DoublyLinkedListIterator<T>::DoublyLinkedListIterator': no overloaded function could convert all the argument types
+          with
+          [
+              T=std::string
+          ]
+  	C:\Users\guest1\src\COS30008\ProblemSet4\DoublyLinkedListIterator.h(182,1):
+  	could be 'DoublyLinkedListIterator<T>::DoublyLinkedListIterator(DoublyLinkedListIterator<T> &&)'
+          with
+          [
+              T=std::string
+          ]
+  		C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22):
+  		'DoublyLinkedListIterator<T>::DoublyLinkedListIterator(DoublyLinkedListIterator<T> &&)': cannot convert argument 1 from 'const std::shared_ptr<DoublyLinkedList<T>>' to 'DoublyLinkedListIterator<T> &&'
+          with
+          [
+              T=std::string
+          ]
+  			C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,23):
+  			Reason: cannot convert from 'const std::shared_ptr<DoublyLinkedList<T>>' to 'DoublyLinkedListIterator<T>'
+          with
+          [
+              T=std::string
+          ]
+  			C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,23):
+  			No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  	C:\Users\guest1\src\COS30008\ProblemSet4\DoublyLinkedListIterator.h(182,1):
+  	or       'DoublyLinkedListIterator<T>::DoublyLinkedListIterator(const DoublyLinkedListIterator<T> &)'
+          with
+          [
+              T=std::string
+          ]
+  		C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22):
+  		'DoublyLinkedListIterator<T>::DoublyLinkedListIterator(const DoublyLinkedListIterator<T> &)': cannot convert argument 1 from 'const std::shared_ptr<DoublyLinkedList<T>>' to 'const DoublyLinkedListIterator<T> &'
+          with
+          [
+              T=std::string
+          ]
+  			C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,23):
+  			Reason: cannot convert from 'const std::shared_ptr<DoublyLinkedList<T>>' to 'const DoublyLinkedListIterator<T>'
+          with
+          [
+              T=std::string
+          ]
+  			C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,23):
+  			No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  	C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22):
+  	while trying to match the argument list '(const std::shared_ptr<DoublyLinkedList<T>>)'
+          with
+          [
+              T=std::string
+          ]
+  C:\Users\guest1\src\COS30008\ProblemSet4\List.h(142,22):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\guest1\src\COS30008\ProblemSet4\Main.cpp(17,16):
+  	see reference to class template instantiation 'List<std::string>' being compiled
+  	C:\Users\guest1\src\COS30008\ProblemSet4\List.h(140,12):
+  	while compiling class template member function 'DoublyLinkedListIterator<T> List<T>::begin(void) noexcept const'
+          with
+          [
+              T=std::string
+          ]
+  		C:\Users\guest1\src\COS30008\ProblemSet4\Main.cpp(47,24):
+  		see the first reference to 'List<std::string>::begin' in 'main'
+  
