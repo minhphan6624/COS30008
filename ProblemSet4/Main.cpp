@@ -7,8 +7,8 @@
 #include "List.h"
 
 #define P1
-//#define P2
-//#define P3
+#define P2
+#define P3
 
 int main()
 {

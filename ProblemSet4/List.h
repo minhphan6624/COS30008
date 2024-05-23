@@ -28,13 +28,76 @@ public:
   }
 
   // copy semantics
-  List( const List& aOther );					// copy constructor		(10)
-  List& operator=( const List& aOther );		// copy assignment		(14)
+
+  // copy constructor		(10)
+  List(const List& aOther) : fHead(nullptr), fTail(nullptr), fSize(0)
+  {
+      for (Node lNode = aOther.fHead; lNode != nullptr; lNode = lNode->fNext)
+      {
+          push_back(lNode->fData);
+      }
+  }
+
+  // copy assignment		(14)
+  List& operator=(const List& aOther)
+  {
+      if (this != &aOther)
+      {
+          //Clear the current list
+          while (fHead != nullptr)
+          {
+              Node lTemp = fHead;
+              fHead = fHead->fNext;
+              lTemp->isolate();  // Disconnect the node from the list
+          }
+          fTail = nullptr;
+          fSize = 0;
+
+          for (Node lNode = aOther.fHead; lNode != nullptr; lNode = lNode->fNext)
+          {
+              push_back(lNode->fData);
+          }
+      }
+      return *this;
+
+  }
 
   // move semantics
-  List( List&& aOther ) noexcept;				// move constructor		(4)
-  List& operator=( List&& aOther ) noexcept;	// move assignment		(8)
-  void swap( List& aOther ) noexcept;			// swap elements		(9)
+
+  // move constructor		(4)
+  List(List&& aOther) noexcept : fHead(nullptr), fTail(nullptr), fSize(0)
+  {
+      swap(aOther);
+  }
+
+  // move assignment		(8)
+  List& operator=( List&& aOther ) noexcept
+  {
+      if (this != &aOther){
+      
+          //Clear the current list
+          while (fHead != nullptr)
+          {
+              Node temp = fHead;
+              fHead = fHead->fNext;
+              temp->isolate();  // Disconnect the node from the list
+          }
+          fTail = nullptr;
+          fSize = 0;
+
+
+          swap(aOther);
+      }
+      return *this;
+  }
+
+  // swap elements		(9)
+  void swap(List& aOther) noexcept
+  {
+      std::swap(fHead, aOther.fHead);
+      std::swap(fTail, aOther.fTail);
+      std::swap(fSize, aOther.fSize);
+  }
 
   // basic operations
   size_t size() const noexcept					// list size			(2)
@@ -42,25 +105,28 @@ public:
       return fSize;
   }
     
+  // add element at front	(24)
   template<typename U>
-  void push_front(U&& aData)					// add element at front	(24)
+  void push_front(U&& aData)					
   {
-      Node lNewNode = DoublyLinkedList<T>::makeNode(std::forward<U>(aData));
+      //Create new node
+      Node newNode = DoublyLinkedList<T>::makeNode(std::forward<U>(aData));
 
-      //If the node is empty
-      if (fHead == nullptr)
-      {
-          fHead = fTail = lNewNode;
+      //Set new node's next node to the current head
+      newNode->fNext = fHead;
 
-      }
-      else
-      {
-          lNewNode->fNext = fHead;
-          fHead->fPrevious.lock() = lNewNode;
-          fHead = lNewNode;
+      
+      if (fHead != nullptr) {
+          fHead->fPrevious = newNode;
       }
 
-      fSize++; //increase size by 1
+      fHead = newNode;
+
+      if (fTail == nullptr) {
+          fTail = newNode;
+      }
+
+      fSize++;
   }
     
   template<typename U>
@@ -68,52 +134,58 @@ public:
   {
       Node lNewNode = DoublyLinkedList<T>::makeNode(std::forward<U>(aData));
 
-      if(fTail == nullptr)
-      {
-          fTail = lNewNode;
-      }
-      else
-      {
-          lNewNode->fPrevious.lock() = fTail;
+      //If the list is empty
+      lNewNode->fPrevious = fTail;
+
+      if (fTail != nullptr) {
           fTail->fNext = lNewNode;
-          fTail = lNewNode;
       }
+
+      fTail = lNewNode;
+
+      if (fHead == nullptr) {
+          fHead = lNewNode;
+      }
+
+      fSize++;
   }
     
   void remove(const T& aElement) noexcept	// remove element		(36)
   {
-      Node lCurrent = fHead;
+     Node lCurrent = fHead;
 
-      //Traverse through the list
-      while (lCurrent != nullptr)
-      {
-          //If the element is found
-          if (lCurrent->fData == aElement)
-          {
-              //If the node is not the head
-              if (lCurrent->fPrevious.lock())
-              {
-                  lCurrent->fPrevious.lock()->fNext = lCurrent->fNext;
+      // Traverse through the list
+      while (lCurrent != nullptr) {
+
+          // If the element is found
+          if (lCurrent->fData == aElement) {
+              auto lPrevious = lCurrent->fPrevious.lock(); // Lock 
+
+              // If the node is not the head
+              if (lPrevious) {
+                  lPrevious->fNext = lCurrent->fNext;
               }
-              else
-              {
+              else {
                   fHead = lCurrent->fNext;
               }
 
-              //If the current node is not the tail
-              if (lCurrent->fNext != nullptr)
-              {
-                  lCurrent->fNext->fPrevious= lCurrent->fPrevious;
+              // If the current node is not the tail
+              if (lCurrent->fNext != nullptr) {
+                  lCurrent->fNext->fPrevious = lCurrent->fPrevious;
               }
-              else
-              {
-                  fTail = lCurrent->fPrevious.lock();
+              else {
+                  fTail = lPrevious;
               }
 
               lCurrent->isolate();
               fSize--;
-              return;
 
+              // If the list is empty, set head and tail to null
+              if (fSize == 0) {
+                  fHead = nullptr;
+                  fTail = nullptr;
+              }
+              return;
           }
           lCurrent = lCurrent->fNext;
       }
@@ -121,36 +193,50 @@ public:
     
   const T& operator[](size_t aIndex) const	// list indexer			(14)
   {
-      if (aIndex >= fSize)
-      {
+      if (aIndex >= fSize) {
           throw std::out_of_range("Index out of range");
       }
 
       Node lCurrent = fHead;
-
-      for (size_t i = 0; i < aIndex; i++)
-      {
+      for (size_t i = 0; i < aIndex; ++i) {
+          if (lCurrent == nullptr) 
+              throw std::out_of_range("Index out of range during traversal");
+          
           lCurrent = lCurrent->fNext;
       }
 
+      if (lCurrent == nullptr) {
+          std::cout << "Current node is null after traversal" << std::endl;
+          throw std::out_of_range("Index out of range after traversal");
+      }
       return lCurrent->fData;
   }
     
   // iterator interface
-  Iterator begin() const noexcept				//						(4)
+  //Return an iterator positioned at the first element
+  Iterator begin() const noexcept				
   {
-      return Iterator(fHead);
+      return Iterator(fHead, fTail);
   }
-  Iterator end() const noexcept		//						(4)
+
+  //Return an iterator positioned after the last element
+  Iterator end() const noexcept		
   {
-      return begin().end();
+      Iterator it(fHead, fTail);
+      return it.end();
   }
-  Iterator rbegin() const noexcept		//						(4)
+
+  //Return an iterator positioned at the last element
+  Iterator rbegin() const noexcept		
   {
-      return begin().rbegin();
+      Iterator it(fHead, fTail);
+      return it.rbegin();
   }
-  Iterator rend() const noexcept				//						(4)
+
+  //Return an iterator positioned before the first element
+  Iterator rend() const noexcept				
   {
-      return begin().rend();
+      Iterator it(fHead, fTail);
+      return it.rend();
   }
 };
